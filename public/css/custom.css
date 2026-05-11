@@ -1,0 +1,60 @@
+/* 导航统一样式 */
+#nav .menus_item a {
+    font-size: 18px !important;
+    color: #ffffff !important;
+    padding: 0 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+/* 菜单透明隔断 */
+#nav .menus_item:not(:last-child) a::after {
+    content: "" !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 1px !important;
+    height: 16px !important;
+    background: rgba(255,255,255,0.3) !important;
+}
+
+/* 悬浮粉色 */
+#nav .menus_item a:hover {
+    color: #ff8fab !important;
+    transform: scale(1.07) !important;
+}
+
+/* 图标间距 */
+#nav .menus_item a i {
+    margin-right: 6px !important;
+}
+
+/* ========== 搜索强制生效 ========== */
+#search-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+#search-button i,
+#search-button span {
+    font-size: 18px !important;
+    color: #ffffff !important;
+}
+
+#search-button:hover i,
+#search-button:hover span {
+    color: #ff8fab !important;
+}
+
+/* 强制所有页面的横幅背景都用你的图片 */
+#page-header {
+    background-image: url('/img/Cache_-1d2e0a670c8bab44.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
